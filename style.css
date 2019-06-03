@@ -2,6 +2,7 @@ body {
     background-color: #92bfb1;
     text-align: center;
     color: #694a38;
+    margin: 0 auto;
 }
 
 #drum-machine {

@@ -6,6 +6,8 @@ body {
     background-color: #f7dd72;
     width: 550px;
     border-radius: 50px;
+    min-height: 550px;
+    padding: 1%;
 }
 
 .drum-pad {
@@ -13,4 +15,8 @@ body {
     width: 150px;
     float: left;
     margin: 10px;
+    border-radius: 50px;
+    min-height: 150px;
+    font-size: 30px;
+    padding: 11%;
 }

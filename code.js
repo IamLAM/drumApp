@@ -3,6 +3,8 @@ $(document).ready(function(){
 $(".drum-pad").on("click",function(event){
     console.log($(this).attr("id"));
     console.log("click");
+    var sp=$(this).attr("id");
+    selectPad(sp);
 
 });
 
@@ -13,8 +15,17 @@ $("body").on("keypress",function(event){
     console.log("music");
     var letter=event.keyCode;
     console.log(letter);
+    var sp = "d"+String.fromCharCode(letter).toUpperCase();
+   console.log(sp);
+    selectPad(sp);
+
+   
+});    
+
+
+function selectPad(letter){
     switch(letter){
-        case 81: case 113://Q 
+        case "dQ"://Q 
         $("#dQ").animate({
             backgroundColor:'#a61c3c',
             color:'#f4ac45'
@@ -29,7 +40,7 @@ $("body").on("keypress",function(event){
        // $("display").html("#Q");
        document.getElementById("display").innerHTML="#Q";
         break;
-        case 87: case 119://W
+        case "dW"://W
         $("#dW").animate({
             backgroundColor:'#a61c3c',
             color:'#f4ac45'
@@ -43,7 +54,7 @@ $("body").on("keypress",function(event){
       //$("display").html("#W");
       document.getElementById("display").innerHTML="#W";
         break;
-        case 69: case 101://E
+        case "dE"://E
         $("#dE").animate({
             backgroundColor:'#a61c3c',
             color:'#f4ac45'
@@ -57,7 +68,7 @@ $("body").on("keypress",function(event){
         //$("display").html("#E");
         document.getElementById("display").innerHTML="#E";
         break;
-        case 65: case 97://A
+        case "dA"://A
         $("#dA").animate({
             backgroundColor:'#a61c3c',
             color:'#f4ac45'
@@ -71,7 +82,7 @@ $("body").on("keypress",function(event){
         //$("display").html("#A");
         document.getElementById("display").innerHTML="#A";
         break;
-        case 83: case 115://S
+        case "dS"://S
         $("#dS").animate({
             backgroundColor:'#a61c3c',
             color:'#f4ac45'
@@ -85,7 +96,7 @@ $("body").on("keypress",function(event){
         //$("display").html("#Q");
         document.getElementById("display").innerHTML="#S";
         break;
-        case 68: case 100://D
+        case "dD"://D
         $("#dD").animate({
             backgroundColor:'#a61c3c',
             color:'#f4ac45'
@@ -99,7 +110,7 @@ $("body").on("keypress",function(event){
         //$("display").html("#D");
         document.getElementById("display").innerHTML="#D";
         break;
-        case 90: case 122://Z
+        case "dZ"://Z
         $("#dZ").animate({
             backgroundColor:'#a61c3c',
             color:'#f4ac45'
@@ -113,7 +124,7 @@ $("body").on("keypress",function(event){
         //$("display").html("#Z");
         document.getElementById("display").innerHTML="#Z";
         break;
-        case 88: case 120://X
+        case "dX"://X
         $("#dX").animate({
             backgroundColor:'#a61c3c',
             color:'#f4ac45'
@@ -128,7 +139,7 @@ $("body").on("keypress",function(event){
         document.getElementById("display").innerHTML="#X";
     
         break;
-        case 67: case 99://C
+        case "dC"://C
         $("#dC").animate({
             backgroundColor:'#a61c3c',
             color:'#f4ac45'
@@ -146,10 +157,10 @@ $("body").on("keypress",function(event){
             console.log("no founded"); 
 
     }
+}
 
 
-   
-});    
+
 
 });
 

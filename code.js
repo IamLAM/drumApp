@@ -9,9 +9,11 @@ $("body").on("keypress",function(event){
     switch(letter){
         case 81: case 113://Q 
         $("#dQ").animate({
-            backgroundColor:'red'
+            backgroundColor:'#a61c3c',
+            color:'#f4ac45'
           }, 1000, function() {
-         
+
+            $("#dQ").css({"background-color":"#f4ac45","color":"#1e152a"});
           });
         
         

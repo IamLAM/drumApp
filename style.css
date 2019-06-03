@@ -24,3 +24,8 @@ body {
     padding: 11%;
     color: #1e152a;
 }
+
+.drum-pad:active {
+    background-color: #a61c3c;
+    color: #f4ac45;
+}

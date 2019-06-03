@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+   
 $("body").on("keypress",function(event){
 
     console.log("music");
@@ -8,6 +8,15 @@ $("body").on("keypress",function(event){
     console.log(letter);
     switch(letter){
         case 81: case 113://Q 
+        $("#dQ").animate({
+            backgroundColor:'red'
+          }, 1000, function() {
+         
+          });
+        
+        
+        
+    
         $("#Q").trigger("play");
         break;
         case 87: case 119://W

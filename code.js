@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+$(".drum-pad").on("click",function(event){
+
+    console.log("click");
+});
+
+
    
 $("body").on("keypress",function(event){
 
@@ -17,9 +23,10 @@ $("body").on("keypress",function(event){
           });
         
         
-        
-    
+           
         $("#Q").trigger("play");
+       // $("display").html("#Q");
+       document.getElementById("display").innerHTML="#Q";
         break;
         case 87: case 119://W
         $("#dW").animate({
@@ -31,6 +38,9 @@ $("body").on("keypress",function(event){
           });
         
         $("#W").trigger("play");
+      //  $("display").text("#W");
+      //$("display").html("#W");
+      document.getElementById("display").innerHTML="#W";
         break;
         case 69: case 101://E
         $("#dE").animate({
@@ -42,6 +52,9 @@ $("body").on("keypress",function(event){
           });
         
         $("#E").trigger("play");
+        //$("display").text("#E");
+        //$("display").html("#E");
+        document.getElementById("display").innerHTML="#E";
         break;
         case 65: case 97://A
         $("#dA").animate({
@@ -53,6 +66,9 @@ $("body").on("keypress",function(event){
           });
         
         $("#A").trigger("play");
+        //$("display").text("#A");
+        //$("display").html("#A");
+        document.getElementById("display").innerHTML="#A";
         break;
         case 83: case 115://S
         $("#dS").animate({
@@ -64,6 +80,9 @@ $("body").on("keypress",function(event){
           });
         
         $("#S").trigger("play");
+        //$("display").text("#S");
+        //$("display").html("#Q");
+        document.getElementById("display").innerHTML="#S";
         break;
         case 68: case 100://D
         $("#dD").animate({
@@ -75,6 +94,9 @@ $("body").on("keypress",function(event){
           });
         
         $("#D").trigger("play");
+        //$("display").text("#D");
+        //$("display").html("#D");
+        document.getElementById("display").innerHTML="#D";
         break;
         case 90: case 122://Z
         $("#dZ").animate({
@@ -86,6 +108,9 @@ $("body").on("keypress",function(event){
           });
         
         $("#Z").trigger("play");
+        //$("display").text("#Z");
+        //$("display").html("#Z");
+        document.getElementById("display").innerHTML="#Z";
         break;
         case 88: case 120://X
         $("#dX").animate({
@@ -97,6 +122,10 @@ $("body").on("keypress",function(event){
           });
         
         $("#X").trigger("play");
+        $//("display").text("#X");
+        //$("display").html("#X");
+        document.getElementById("display").innerHTML="#X";
+    
         break;
         case 67: case 99://C
         $("#dC").animate({
@@ -108,6 +137,9 @@ $("body").on("keypress",function(event){
           });
         
         $("#C").trigger("play");
+        //$("display").text("#C");
+        //$("display").html("#C");
+        document.getElementById("display").innerHTML="#C";
         break;
         default:
             console.log("no founded"); 

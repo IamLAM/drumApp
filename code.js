@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
 $(".drum-pad").on("click",function(event){
-
+    console.log($(this).attr("id"));
     console.log("click");
+
 });
 
 
